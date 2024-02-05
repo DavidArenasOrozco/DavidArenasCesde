@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <table width="100%">
+                <thead>
+                    <tr>
+                    <tr>
+                        <th>
+                            <h1>Tienda de mascotas Mypet</h1>
+                        </th>
+                        <th align="left"><a href="/index.html"><img src="/images/logo.png" alt="logo de Mypet"></a></th>
+                        <th><a href="/index.html">Incio</a></th>
+                        <th><a href="/gato.html">Gato</a></th>
+                        <th><a href="perro.html">Perro</a></th>
+                        <th><a href="/marcas.html">Marcas</a></th>
+                        <th><a href="/registrarse.html">Registrarse</a></th>
+                    </tr>
+                </thead>
+            </table>
+        </nav>
+    </header>
+    <hr>
+    <table width="50%" align="center">
+        <h2 align="center">Registrarse</h2>
+        <form>
+            <tr>
+                <td align="right">
+                    <label for="fullname">Nombre completo</label>
+                </td>
+                <td><input type="text" name="fullname" id="fullname" minlength="3" maxlength="100" autofocus
+                        placeholder="Ingrese su nombre completo" pattern="^[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ\s'-]+$"
+                        title="Ingrese solo letras, mínimo 3 caracteres" size="22" required></td>
+            <tr>
+                <td align="right">
+                    <label for="fullname">Correo electrónico</label>
+                </td>
+                <td><input type="text" name="email" id="email" placeholder="Ingrese su correo electrónico"
+                        pattern="[a-zA-Z0-9!#$%&'*\/=?^_\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?"
+                        title="Ingrese un correo con el formato example@dominio.com" size="22" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label for="celphone">Numero de celular</label>
+                </td>
+                <td><input type="text" name="celphone" id="celphone" required minlength="10"
+                        title="Ingrese solo números, 10 numeros como mínimo" autocomplete="off"
+                        placeholder="Digite su número de celular" pattern="\d+"></td>
+
+            <tr>
+                <td>
+                    <label for="submit"></label>
+                </td>
+                <td><input type="submit" name="submit" id="submit" value="Registrarse"></td>
+
+
+            </tr>
+            </tr>
+        </form>
+    </table>
+
+</body>
+
+</html>
